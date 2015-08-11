@@ -1,0 +1,200 @@
+h1
+{
+	/*background: #00FFFF;*/
+	font-family: 'Pacifico', cursive;
+}
+
+html
+{
+	font-family: 'Indie Flower', cursive;
+	font-size: 110%;
+}
+
+/*@media all and (min-width: 400px)*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+{
+	html
+	{
+		font-size: 80%;
+		/*hola*/
+	}
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+* Reiniciamos el estilo de los botones para iOS
+*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+/*
+* Botones
+*/
+.btn {
+    display : inline-block;
+    line-height : 1;
+    color : white;
+    text-align : center;
+    vertical-align : middle;
+    font-size: .8rem;
+    white-space:nowrap;
+    background-color : #ff4842;
+    border : none;
+    font-weight: bold;
+    cursor : pointer;
+    margin: 0;
+    margin-left: 1px;
+    padding: 1em;
+    border-radius: 1px;
+}
+
+    /**
+    * Nadie quiere un botón con texto subrayado cuando
+    * hacemos hover.
+    */
+
+    .btn:hover {
+        text-decoration : none;
+    }
+    .btn:active,
+    .btn:focus{
+        outline:none;
+    }
+
+.search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    font-size: 3rem;
+}
+
+    .search__text {
+        width: 75%;
+        font-size: 1rem;
+    }
+
+
+
+.main-header
+{
+	text-align: center;
+	background-color: olive;
+	color: white;
+	padding: 4em;
+}
+
+	.main-header h1
+	{
+		margin: 0;
+	}
+
+	.main-header h2
+	{
+		font-size: 1rem;
+		font-weight: normal;
+	}
+
+	@media all and (max-width: 400px)
+	{
+		.main-header
+		{
+			background-color: blue;
+		}
+	}
+
+.card
+{
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	background-image: url(img/bb.jpg);
+	/*background-image: url(img/toluca-small.jpg); aqui iria uno 
+	por defecto por si
+	no se encuentra la imagen*/
+	background-size: cover;
+	color: #190B07;
+	padding: 4em;
+}
+
+	.card--toluca
+	{
+		background-image: url(img/bb.jpg);
+	}
+
+	.card--otomi
+	{
+		background-image: url(img/otomi.jpg);
+	}
+
+	.card__title
+	{
+		margin: 0;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.card__date
+	{
+		font-size: .7rem;
+		margin: 0;
+		text-align: center;
+	}
+
+	@media all and (min-width: 28rem)
+	{
+		.card
+		{
+			/*background-image: url(img/toluca.jpg);*/
+			background-position: center;
+		}
+	}
+
+	.card__info
+	{
+		position: absolute;
+		bottom: .4em;
+		left: .4em;
+		background-color: #F3F781;
+		text-align: center;
+	}
+
+	.card__image
+	{
+		display: block;
+		text-align: center;
+	}
+
+	.card__temp
+	{
+		display: block;
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.card__maxt::before
+	{
+		content: "Max: "
+	}
+
+	.card__mint::before
+	{
+		content: "Min: "
+	}
+
+
+ .loader {
+   text-align: center;
+   padding: 1em;
+ }
