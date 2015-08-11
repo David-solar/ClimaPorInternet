@@ -51,7 +51,14 @@
 
 	function errorFound(error)
 	{
-		alert("Error ocurrido: " + error.code)
+		if(error.code == 1)
+		{
+			alert("Error ocurrido:" + error.code + "\nNo tienes tu ubicacion activada");
+		}
+		else
+		{
+			alert("Error ocurrido: " + error.code);
+		}
 		//si regresa un valor:
 		//0: Error desconocido
 		//1: Permiso denegado
