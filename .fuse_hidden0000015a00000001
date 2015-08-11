@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+	<head>
+		<meta charset = "utf-8" />
+		<title>
+			Clima por internet
+		</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico|Indie+Flower' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		
+		<header class = "main-header">
+			<h1>El clima en @internet</h1>
+			<h2>Aqui podras consultar el clima de otros lugares en el mundo :)</h2>
+		</header>
+
+		<div class = "loader">
+			Geolocalizando la posicion, por favor espere un momento...
+		</div>
+
+		<form action = "" class = "search">
+			<input type = "text" data-input = "cityAdd" class = "search__text" placeholder="ingresa una ciudad">
+			<input type = "submit" data-button = "add" class = "search__btn btn" value = "Añadir ciudad">
+
+			<button data-saved-cities class = "search__btn btn">Ver ciudades consultadas</button>
+
+		</form>
+
+		<main class = "cards-group">
+			<template id = "template--city">
+				<div class = "card card--toluca">
+					<header class = "card__header">
+						<h3 data-city class = "card__title">Toluca</h3>
+						<h4 data-time class = "card__date">8:43p.m.</h4>
+					</header>
+					<div class = "card__info">
+						<img data-icon src = "http://openweathermap.org/img/w/02d.png" alt = "" class = "card__image">
+						<span data-temp = "max" class = "card__maxt">18°</span>
+						<span data-temp = "min" class = "card__mint">11°</span>
+						<span data-temp = "current" class = "card__temp">13°</span>
+					</div>
+				</div>
+			</template>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src = "js/index.js"></script>
+	</body>
+
+</html>
